@@ -1,4 +1,27 @@
-# coding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Date    : 2017-10-19 19:37:16
+# @Author  : Sundae Chen (sundaechn@gmail.com)
+# @Link    : http://sundae.applinzi.com/home
+
+
+import os
+import pythoncom
+import pyHook
+import win32api
+import win32con
+import shutil
+import urllib2
+from time import sleep
+from time import *
+from email import encoders
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email.mime.text import MIMEText
+from email.header import Header
+from email.utils import parseaddr, formataddr
+import smtplib
+
 
 from __future__ import division
 import PIL
@@ -8,7 +31,8 @@ import os
 import random
 import numexpr
 import time
-import ImageFont, ImageDraw
+import ImageFont
+import ImageDraw
 
 STAG = time.time()
 
@@ -51,10 +75,12 @@ def createNewImg():
         I = numexpr.evaluate('''I*(1-alpha)''')
         for i in range(W_num):
             for j in range(H_num):
-                SH = I[(j * H_size):((j + 1) * H_size), (i * W_size):((i + 1) * W_size)]
+                SH = I[(j * H_size):((j + 1) * H_size),
+                       (i * W_size):((i + 1) * W_size)]
                 DA = transfer(random.choice(aval), W_size, H_size)
                 res = numexpr.evaluate('''SH+DA*alpha''')
-                I[(j * H_size):((j + 1) * H_size), (i * W_size):((i + 1) * W_size)] = res
+                I[(j * H_size):((j + 1) * H_size),
+                  (i * W_size):((i + 1) * W_size)] = res
         Image.fromarray(I.astype(numpy.uint8)).save('imgcloud_%s.jpg' % alpha)
 
 
@@ -80,5 +106,4 @@ if __name__ == '__main__':
     getAllPhotos()
     createNewImg()
     createNewImge()
-    print
-    "Total Time %s" % (time.time() - STAG)
+    print "Total Time %s" % (time.time() - STAG)
