@@ -14,8 +14,8 @@
 
 原始图片
 
-![404](Little_python/Picture_cloud/target.png)
+![image]()
 
 转换后图片
 
-![404](Little_python/Picture_cloud/imgcloud.jpg)
+![image]()
