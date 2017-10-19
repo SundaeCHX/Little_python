@@ -1,6 +1,8 @@
 #Picture_cloud
 
-图片云拼接程序，将目标图片拷贝至Picture_cloud/目录下，示例程序将其命名为target.jpg。
+依赖库 PIL numpy numexpr 等。
+
+图片云拼接层叠程序，将目标图片拷贝至Picture_cloud/目录下，示例程序将其命名为target.jpg。
 
 新建photos/目录，将图片群拷贝至Picture_cloud/photos/目录下。
 
