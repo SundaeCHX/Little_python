@@ -15,10 +15,27 @@
      比如有400张图片，可设置 W_num = 20 H_num = 20
 
 
-原始图片
+
+Dependent library PIL numpy numexpr and so on.
+
+Image cloud stitching cascade program, copy the target image to Picture_cloud / directory, in the example target.png.
+
+Create a new photo / directory and copy the picture group to the Picture_cloud / photos / directory.
+
+Set picture.py parameter, image num, size, alpha and so on.
+
+Run python picture.py to generate six converted images.
+
+Note: The number of pictures num and photos / catalog number of pictures related to the picture the more the better results.
+
+    For example, there are 400 pictures, you can set W_num = 20 H_num = 20
+    
+    
+
+原始图片  Original Image
 
 ![image](https://github.com/SundaeCHX/Little_python/blob/master/Picture_cloud/target.png)
 
-转换后图片
+转换图片  Convert Image
 
 ![image](https://github.com/SundaeCHX/Little_python/blob/master/Picture_cloud/imgcloud.jpg)
