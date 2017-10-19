@@ -13,7 +13,7 @@ def grey_color_func(word,font_size,position,orientation,random_state=None,**kwar
 	return 'hsl(0,0%%,%d%%)' % random.randint(60,100)
 
 # Make the whole mask.
-mask = np.array(Image.open(os.path.join(d,'mask.png')))
+mask = np.array(Image.open(os.path.join(d,'picture.png')))
 
 # Read the whole text.
 text = open(os.path.join(d, 'word.txt')).read().decode('gbk')
