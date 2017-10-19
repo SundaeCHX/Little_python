@@ -55,7 +55,7 @@ def createNewImg():
                 DA = transfer(random.choice(aval), W_size, H_size)
                 res = numexpr.evaluate('''SH+DA*alpha''')
                 I[(j * H_size):((j + 1) * H_size), (i * W_size):((i + 1) * W_size)] = res
-        Image.fromarray(I.astype(numpy.uint8)).save('NewImge_%s.jpg' % alpha)
+        Image.fromarray(I.astype(numpy.uint8)).save('imgcloud_%s.jpg' % alpha)
 
 
 def createNewImge():
@@ -73,7 +73,7 @@ def createNewImge():
 
     img = Image.fromarray(I.astype(numpy.uint8))
     img = img.point(lambda i: i * 1.5)
-    img.save('NewImge.jpg')
+    img.save('imgcloud.jpg')
 
 
 if __name__ == '__main__':
