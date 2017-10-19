@@ -8,7 +8,7 @@
 
 设置picture.py参数，图片num、size、alpha等。
 
-运行 python picture.py 即可生成六种目标图片。
+运行 python picture.py 即可生成六种转换后的图片。
 
 备注：图片num数量与photos/目录下图片数量相关，图片越多效果越好，比如有400张图片，可设置 W_num = 20 H_num = 20
 
