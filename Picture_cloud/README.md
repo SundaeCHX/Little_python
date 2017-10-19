@@ -12,10 +12,11 @@
 
 备注：图片num数量与photos/目录下图片数量相关，图片越多效果越好，比如有400张图片，可设置 W_num = 20 H_num = 20
 
+
 原始图片
 
-![image]()
+![image](https://github.com/SundaeCHX/Little_python/blob/master/Picture_cloud/target.png)
 
 转换后图片
 
-![image]()
+![image](https://github.com/SundaeCHX/Little_python/blob/master/Picture_cloud/imgcloud.jpg)
