@@ -9,6 +9,8 @@
 
 程序详情请参考每个程序中的 README.md 。
 
+如果你需要帮助，可联系我：sundaechn@gmail.com / chxhyfx@163.com 。
+
 Some cute or practical python programs and "viruses".
 
 You can download and view, modify the program source code, you can also run a good package of Windows executable program.
@@ -18,3 +20,5 @@ I hope you have a certain basis for Python programming, so that you can better u
 Thanks to the maintainers of the open source library used in the program.
 
 Please read the README.md in each program.
+
+If you need some help, please contact me at sundaechn@gmail.com / chxhyfx@163.com.
