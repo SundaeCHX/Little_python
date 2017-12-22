@@ -4,3 +4,5 @@
 
 
 A New Year's gift applet that uses GUI programming，you can use the Pyinstaller to package it as a Windows executable and send to others.
+
+![image](https://github.com/SundaeCHX/Little_python/blob/master/Gift_happy/welcome.png)
