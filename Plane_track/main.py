@@ -13,7 +13,7 @@ import math
 def judgeIFOV(d, f, IFOV):
     IFOV1 = int(d) / int(f)
     if (IFOV1 <= float(IFOV)):
-        print(u'选取的探测器可达到探测/识别要求')
+        print(u'\n选取的探测器可达到探测/识别要求')
         return True
     else:
         print(u'''
@@ -59,57 +59,57 @@ def calculate(h1, v1, d, f, h, ac, r, IFOV):
     vv = round((int(v1)*int(d))/(int(f)*17.45), 2)
     ac = float(ac)
     if ac <= vv/2:
-        print(u'\n探测器垂直安装角过小，安装角最小为 %.2f' % (vv/2))
+        print(u'\n探测器垂直安装角过小，安装角最小为%.2f' % (vv/2))
         return False
     print(u'''
 		红外探测器参数
-		---------------------------------
+		-------------------------------------
 		分辨率             %d x %d
 		像元间距           %dum
 		镜头焦距           %dmm
 		视场角为           %.2f x %.2f
 		垂直安装角度       %.2f
-		---------------------------------
-		无人机飞行高度为 %dm，转弯半径为 %dm
+		-------------------------------------
+		无人机飞行高度为%dm，转弯半径为%dm
 		探测/识别所需空间分辨率为 %.3fmrad
 		''' % (h1, v1, d, f, vh, vv, ac, h, r, IFOV))
     w = int((2*h*math.tan(math.radians(vh/2)))/math.cos(math.radians(ac-vv/2)))
-    print(u'无人机扫描线宽度为 %dm' % w)
+    print(u'无人机扫描线宽度为%dm' % w)
     d3 = int(h*(math.tan(math.radians(ac-vv/2))+math.tan(math.radians(ac+vv/2))))
     dez = int((w**2+d3**2)**0.5)
     if int(r) <= w/2:
         L = way1(r, w, d3)
-        print(u'转弯方式为方式一，单次转弯长度为: %dm' % L)
+        print(u'转弯方式为方式一，单次转弯长度为%dm' % L)
     elif ((w/2 < int(r)) and (int(r) <= dez/2)):
         n = int(2*int(r)/w)+1
         L2 = way2(r, w, d3, dez)
         L4 = way4(r, w, d3, n)
         if L2 <= L4:
             L = L2
-            print(u'转弯方式为方式二，单次转弯长度为: %d m' % L)
+            print(u'转弯方式为方式二，单次转弯长度为%dm' % L)
         else:
             L = L4
-            print(u'转弯方式为方式四，间隔行数为: %d，单次转弯长度为: %d m' % (n, L))
+            print(u'转弯方式为方式四，间隔行数为%d，单次转弯长度为%dm' % (n, L))
     elif int(r) > dez/2:
         n = int(2*int(r)/w)+1
         L3 = way3(r, w, d3)
         L4 = way4(r, w, d3, n)
         if L3 <= L4:
             L = L2
-            print(u'转弯方式为方式三，单次转弯长度为: %d m' % L)
+            print(u'转弯方式为方式三，单次转弯长度为%dm' % L)
         else:
             L = L4
-            print(u'转弯方式为方式四，间隔行数为: %d，单次转弯长度为: %d m' % (n, L))
+            print(u'转弯方式为方式四，间隔行数为%d，单次转弯长度为%dm' % (n, L))
     else:
         return False
-    s = 30*20*60  #无人机航程　速度：30m/s 时间：20min
+    s = 30*20*60	#无人机航程　速度：30m/s 时间：20min
     a = w
     b = 2*w + L
     c = w-s
     x = int((-b+(b**2-4*a*c)**0.5)/(2*a))
     l1 = (x+1)*w
     l2 = int((s-x*L)/(x+1))
-    print(u'无人机共转弯%d次，可覆盖区域范围约为 %dm x %dm，飞行路径总长度为 %dm' % (x, l2, l1, l2*(x+1)+x*L))
+    print(u'无人机共转弯%d次，可覆盖区域范围约为%dm x %dm，飞行路径总长度为%dm' % (x, l2, l1, l2*(x+1)+x*L))
 
 
 def main():
