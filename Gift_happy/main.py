@@ -19,10 +19,10 @@ def start1():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    var1.set(u'这一年过的是真的快，掐指一算，你是不是也要十三岁了哈哈')
-    b1 = Tkinter.Button(app, text=u'才不会，我永远都是十二岁',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=start11, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'哈哈哈，是啊又长大了一岁',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=start12, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -32,10 +32,10 @@ def start01():
     global b1, b2
     b1.destroy()
     # b2.destroy()
-    var1.set(u'这一年过的是真的快，掐指一算，你是不是也要十三岁了哈哈')
-    b1 = Tkinter.Button(app, text=u'才不会，我永远都是十二岁',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=start11, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'哈哈哈，是啊又长大了一岁',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=start12, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -45,12 +45,12 @@ def start11():
     global b1, b2, b3, giftInput
     b1.destroy()
     b2.destroy()
-    var1.set(u'哈哈，你永远都是一个聪明的小朋友，小朋友想要什么新年礼物嘛？')
-    b1 = Tkinter.Button(app, text=u'想要这个诶',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=gift1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'还没有想好诶',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=gift2, font=(u'微软雅黑', 12))
-    b3 = Tkinter.Button(app, text=u'哈哈不需要啦',
+    b3 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=gift3, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -63,12 +63,12 @@ def start12():
     global b1, b2, b3, giftInput
     b1.destroy()
     b2.destroy()
-    var1.set(u'长大了一岁也还是小朋友，小朋友想要什么新年礼物嘛？')
-    b1 = Tkinter.Button(app, text=u'想要这个诶',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=gift1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'还没有想好诶',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=gift2, font=(u'微软雅黑', 12))
-    b3 = Tkinter.Button(app, text=u'哈哈不需要啦',
+    b3 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=gift3, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -84,8 +84,8 @@ def gift1():
     b3.destroy()
     gift = giftInput.get()
     giftInput.destroy()
-    var1.set(u'你想要%s呀，其实你在这说了我也不看不到哦，还是直接告诉我吧哈哈' % gift)
-    b1 = Tkinter.Button(app, text=u'哈哈哈，你这个程序一点也不智能',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx' % gift)
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=my, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -96,8 +96,8 @@ def gift2():
     b2.destroy()
     b3.destroy()
     giftInput.destroy()
-    var1.set(u'哈哈哈，那等你想好了再告诉我吧，一定要跳个最喜欢的哦！')
-    b1 = Tkinter.Button(app, text=u'嗯呐，让我先想想吧',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=my, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -108,8 +108,8 @@ def gift3():
     b2.destroy()
     b3.destroy()
     giftInput.destroy()
-    var1.set(u'哎呦，真是一个懂事的小朋友呢')
-    b1 = Tkinter.Button(app, text=u'那是，我是谁',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=my, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -117,12 +117,12 @@ def gift3():
 def my():
     global b1, b2, b3
     b1.destroy()
-    var1.set(u'到了新的一年，最近心情怎么样哇？')
-    b1 = Tkinter.Button(app, text=u'新的一年当然有新气象啦，还不错哦',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=new1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'就那样吧，复习复习复习',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=new2, font=(u'微软雅黑', 12))
-    b3 = Tkinter.Button(app, text=u'不开森，想肥家',
+    b3 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=new3, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -134,8 +134,8 @@ def new1():
     b1.destroy()
     b2.destroy()
     b3.destroy()
-    var1.set(u'那很不错哦，把丧丧的心情都扔到2017吧！')
-    b1 = Tkinter.Button(app, text=u'嗯呐，心情好不好都是一天呀',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=new11, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -145,8 +145,8 @@ def new2():
     b1.destroy()
     b2.destroy()
     b3.destroy()
-    var1.set(u'哎呦，就当复习为了奖学金啦，考完就轻松啦')
-    b1 = Tkinter.Button(app, text=u'也只能这么想啦，赶紧考完',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=new12, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -156,8 +156,8 @@ def new3():
     b1.destroy()
     b2.destroy()
     b3.destroy()
-    var1.set(u'到二月初就能回家了吧，一个月很快就会过去哒')
-    b1 = Tkinter.Button(app, text=u'哼哼哼，快过去快过去',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=new12, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -165,10 +165,10 @@ def new3():
 def new11():
     global b1, b2, b3
     b1.destroy()
-    var1.set(u'哈哈是呀，对了，我还真的一直到跨年都没有喝酒哦')
-    b1 = Tkinter.Button(app, text=u'哈哈，来，喝酒',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=wine1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'跟个酒鬼一样哈哈',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=wine2, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -177,8 +177,8 @@ def new11():
 def new12():
     global b1, b2, b3
     b1.destroy()
-    var1.set(u'其实好不希望你点的是不开心呀，一到这种时候我就像个麻瓜一样')
-    b1 = Tkinter.Button(app, text=u'为什么呀',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=why, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -186,8 +186,8 @@ def new12():
 def why():
     global b1, b2, b3
     b1.destroy()
-    var1.set(u'因为你不开心的时候我也只能打打字，也把你逗不开心，啊，难受难受')
-    b1 = Tkinter.Button(app, text=u'还好啦，那你不开心的时候都干嘛呀',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=what3, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -196,10 +196,10 @@ def wine1():
     global b1, b2, b3
     b1.destroy()
     b2.destroy()
-    var1.set(u'哈哈哈，不喝了不喝了，只有不开心的时候才喝酒，现在肯定开心呀')
-    b1 = Tkinter.Button(app, text=u'你有什么不开心的呀',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=what1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'不开心可以做别的呀，干嘛喝酒',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=what2, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -209,8 +209,8 @@ def wine2():
     global b1, b2, b3
     b1.destroy()
     b2.destroy()
-    var1.set(u'真的是酒鬼一样，我都还记得有一次在宿舍喝完白酒去找你，酒气肯定可难闻了，智障一样')
-    b1 = Tkinter.Button(app, text=u'哈哈，少喝酒啦',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=what3, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -219,8 +219,8 @@ def what1():
     global b1, b2, b3
     b1.destroy()
     b2.destroy()
-    var1.set(u'没睡好的时候哈哈，没有什么是睡一觉不能缓解的，有的话就多睡几觉')
-    b1 = Tkinter.Button(app, text=u'真的是猪哦',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=water, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -229,8 +229,8 @@ def what2():
     global b1, b2, b3
     b1.destroy()
     b2.destroy()
-    var1.set(u'以前不开心的时候是骑车去找个地方喝酒，现在没车了就只能喝酒了哈哈')
-    b1 = Tkinter.Button(app, text=u'还说的这么理直气壮哦',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=water, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -238,8 +238,8 @@ def what2():
 def what3():
     global b1, b2, b3
     b1.destroy()
-    var1.set(u'哈哈，以前不开心的时候是骑车去找个地方喝酒，现在没车了就只能喝酒了')
-    b1 = Tkinter.Button(app, text=u'还说的这么理直气壮哦',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=water, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
@@ -247,10 +247,10 @@ def what3():
 def water():
     global b1, b2, b3
     b1.destroy()
-    var1.set(u'嘿嘿，不过希望以后不会有这么多的不开心啦，虽然每天都好累')
-    b1 = Tkinter.Button(app, text=u'是哇，事情太多压的累吧',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=health1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'是的呀，开心最重要',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=health2, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -260,10 +260,10 @@ def health1():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    var1.set(u'可能经常一直坐着对着电脑吧，就像我现在在写这个程序一样哈哈哈')
-    b1 = Tkinter.Button(app, text=u'哈哈，那你现在累嘛',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=rest1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'哎呦，那你写写了休息休息',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=rest2, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -273,8 +273,8 @@ def rest1():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    var1.set(u'哈哈不累啦，毕竟给你写的程序，就是不知道还有几天能写完，不想写作业')
-    b1 = Tkinter.Button(app, text=u'蠢翔噢', command=pig, font=(u'微软雅黑', 12))
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx', command=pig, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
 
@@ -282,18 +282,18 @@ def rest2():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    # var1.set(u'嗯呐，那我去休息五秒钟哈哈哈')
+    # var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
     time.sleep(5)
-    var1.set(u'啦啦啦，我休息五秒钟回来啦，有没有以为程序卡了哈哈哈哈')
-    b1 = Tkinter.Button(app, text=u'蠢翔噢', command=pig, font=(u'微软雅黑', 12))
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx', command=pig, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
 
 def pig():
     global b1, b2
     b1.destroy()
-    var1.set(u'啊，我先去写作业了')
-    b1 = Tkinter.Button(app, text=u'去吧去吧', command=quit, font=(u'微软雅黑', 12))
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx', command=quit, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
 
@@ -301,8 +301,8 @@ def pretty1():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    var1.set(u'哈哈哈，知道你最好看啦，我先去写作业啦')
-    b1 = Tkinter.Button(app, text=u'去吧去吧', command=quit, font=(u'微软雅黑', 12))
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx', command=quit, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
 
@@ -310,8 +310,8 @@ def pretty2():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    var1.set(u'哈哈哈，开心就好啦，我先去写作业啦')
-    b1 = Tkinter.Button(app, text=u'去吧去吧', command=quit, font=(u'微软雅黑', 12))
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx', command=quit, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
 
 
@@ -319,10 +319,10 @@ def health2():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    var1.set(u'你知道就好噢，开心挂脸上才会越来越好看啦')
-    b1 = Tkinter.Button(app, text=u'哈哈哈，我已经够好看了',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=pretty1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'咯咯咯，满脸写着开心',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=pretty1, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
@@ -332,8 +332,8 @@ def start2():
     global b1, b2
     b1.destroy()
     b2.destroy()
-    var1.set(u'蠢琰噢，记性这么差，那天你还发微博了呢')
-    b1 = Tkinter.Button(app, text=u'哈哈，那可能是吧',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=start01, font=(u'微软雅黑', 12))
     # b2 = Tkinter.Button(app, text=u'', command=start1,font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
@@ -344,8 +344,8 @@ def she():
     global b1, b2
     b1.destroy()
     # b2.destroy()
-    var1.set(u'哈哈哈，就是在找你噢，先祝你新年快乐呀！')
-    b1 = Tkinter.Button(app, text=u'嘿嘿，也祝你新年快乐哦',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=she1, font=(u'微软雅黑', 12))
     # b2 = Tkinter.Button(app, text=u'是嘛？不记得了诶', command=start2,font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
@@ -356,10 +356,10 @@ def she1():
     global b1, b2
     b1.destroy()
     # b2.destroy()
-    var1.set(u'真快呀，一晃就到2018年了，还记得去年跨年晚上去创意城吃饭排队排了好久好久……')
-    b1 = Tkinter.Button(app, text=u'是呀，那天我们也排了好久',
+    var1.set(u'xxxxxxxxxxxxxxxxxxxxxxxxxx')
+    b1 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=start1, font=(u'微软雅黑', 12))
-    b2 = Tkinter.Button(app, text=u'是嘛？不记得了诶',
+    b2 = Tkinter.Button(app, text=u'xxxxxxxxxxxxxxxxxxxxxxxxxx',
                         command=start2, font=(u'微软雅黑', 12))
     b1.grid(row=2, column=1, sticky="w", pady=10)
     b2.grid(row=2, column=2, sticky="w", pady=10)
